@@ -9,6 +9,11 @@ export interface CodeBlockProps {
 
 export function CodeBlock({ code, lang, theme = Theme.dracula }: CodeBlockProps) {
   const lines = React.useMemo<Token[][]>(() => highlight(code, lang), [code, lang]);
+  const [fade, setFade] = React.useState(false);
+
+  React.useEffect(() => {
+    setFade(true);
+  }, []);
 
   const handleCopy = React.useCallback(() => {
     void copyToClipboard(code);
@@ -19,7 +24,7 @@ export function CodeBlock({ code, lang, theme = Theme.dracula }: CodeBlockProps)
       <button type="button" onClick={handleCopy} aria-label="Copy code" className="cb-copy">
         Copy
       </button>
-      <code>
+      <code className={fade ? 'cb-fade-in' : ''}>
         {lines.map((line, i) => (
           <span key={i} className="cb-line">
             {line.map((token, j) => (
