@@ -1,0 +1,52 @@
+:root {
+  --cb-background: #282a36;
+  --cb-foreground: #f8f8f2;
+  --cb-comment: #6272a4;
+  --cb-string: #f1fa8c;
+  --cb-keyword: #ff79c6;
+  --cb-function: #50fa7b;
+  --cb-punctuation: #f8f8f2;
+}
+
+.cb-theme-dracula {
+  --cb-background: #282a36;
+  --cb-foreground: #f8f8f2;
+  --cb-comment: #6272a4;
+  --cb-string: #f1fa8c;
+  --cb-keyword: #ff79c6;
+  --cb-function: #50fa7b;
+  --cb-punctuation: #f8f8f2;
+}
+
+.cb-theme-github {
+  --cb-background: #0d1117;
+  --cb-foreground: #c9d1d9;
+  --cb-comment: #8b949e;
+  --cb-string: #a5d6ff;
+  --cb-keyword: #ff7b72;
+  --cb-function: #d2a8ff;
+  --cb-punctuation: #c9d1d9;
+}
+
+.cb-theme-one-light {
+  --cb-background: #fafafa;
+  --cb-foreground: #383a42;
+  --cb-comment: #a0a1a7;
+  --cb-string: #50a14f;
+  --cb-keyword: #a626a4;
+  --cb-function: #4078f2;
+  --cb-punctuation: #383a42;
+}
+
+.cb-fade-in {
+  animation: cb-fade-in 0.2s ease-in-out;
+}
+
+@keyframes cb-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
