@@ -1,0 +1,22 @@
+{
+  "name": "@nano-codeblock/docs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@nano-codeblock/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@next/mdx": "^1.7.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1",
+    "typescript": "*"
+  }
+}
