@@ -5,6 +5,9 @@ const importPlugin = require('eslint-plugin-import');
 const prettierPlugin = require('eslint-plugin-prettier');
 
 module.exports = [
+  {
+    ignores: ['packages/*/dist'],
+  },
   js.configs.recommended,
   {
     files: ['**/*.ts', '**/*.tsx'],

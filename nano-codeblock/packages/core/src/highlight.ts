@@ -16,15 +16,6 @@ export type Token = {
   type: string;
 };
 
-function normalizeTokens(tokens: (string | Prism.Token)[]): Token[] {
-  return tokens.map((token) => {
-    if (typeof token === 'string') {
-      return { content: token, type: 'plain' };
-    }
-    return { content: String(token.content), type: token.type };
-  });
-}
-
 function splitTokens(tokens: (string | Prism.Token)[]): Token[][] {
   const lines: Token[][] = [[]];
 
@@ -45,7 +36,7 @@ function splitTokens(tokens: (string | Prism.Token)[]): Token[][] {
     }
   }
 
-  return lines.map(normalizeTokens);
+  return lines;
 }
 
 export function highlight(code: string, lang: string): Token[][] {
