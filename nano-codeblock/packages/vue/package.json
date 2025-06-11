@@ -1,0 +1,18 @@
+{
+  "name": "@nano-codeblock/vue",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build -c ../../vite.vue.ts",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "@nano-codeblock/core": "workspace:*"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
