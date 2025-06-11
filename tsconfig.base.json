@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node16",
+    "paths": {
+      "@nano-codeblock/*": ["packages/*/src"]
+    }
+  }
+}
