@@ -1,0 +1,193 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`highlight > tokenizes bash 1`] = `
+[
+  [
+    {
+      "content": "echo",
+      "type": "builtin",
+    },
+    {
+      "content": " ",
+      "type": "plain",
+    },
+    {
+      "content": ""hello"",
+      "type": "string",
+    },
+  ],
+]
+`;
+
+exports[`highlight > tokenizes javascript 1`] = `
+[
+  [
+    {
+      "content": "const",
+      "type": "keyword",
+    },
+    {
+      "content": " x ",
+      "type": "plain",
+    },
+    {
+      "content": "=",
+      "type": "operator",
+    },
+    {
+      "content": " ",
+      "type": "plain",
+    },
+    {
+      "content": "1",
+      "type": "number",
+    },
+    {
+      "content": ";",
+      "type": "punctuation",
+    },
+    {
+      "content": "",
+      "type": "plain",
+    },
+  ],
+  [
+    {
+      "content": "console",
+      "type": "plain",
+    },
+    {
+      "content": ".",
+      "type": "punctuation",
+    },
+    {
+      "content": "log",
+      "type": "function",
+    },
+    {
+      "content": "(",
+      "type": "punctuation",
+    },
+    {
+      "content": "x",
+      "type": "plain",
+    },
+    {
+      "content": ")",
+      "type": "punctuation",
+    },
+    {
+      "content": ";",
+      "type": "punctuation",
+    },
+  ],
+]
+`;
+
+exports[`highlight > tokenizes json 1`] = `
+[
+  [
+    {
+      "content": "{",
+      "type": "punctuation",
+    },
+    {
+      "content": ""a"",
+      "type": "property",
+    },
+    {
+      "content": ":",
+      "type": "operator",
+    },
+    {
+      "content": "1",
+      "type": "number",
+    },
+    {
+      "content": "}",
+      "type": "punctuation",
+    },
+  ],
+]
+`;
+
+exports[`highlight > tokenizes typescript 1`] = `
+[
+  [
+    {
+      "content": "const",
+      "type": "keyword",
+    },
+    {
+      "content": " x",
+      "type": "plain",
+    },
+    {
+      "content": ":",
+      "type": "operator",
+    },
+    {
+      "content": " ",
+      "type": "plain",
+    },
+    {
+      "content": "number",
+      "type": "builtin",
+    },
+    {
+      "content": " ",
+      "type": "plain",
+    },
+    {
+      "content": "=",
+      "type": "operator",
+    },
+    {
+      "content": " ",
+      "type": "plain",
+    },
+    {
+      "content": "1",
+      "type": "number",
+    },
+    {
+      "content": ";",
+      "type": "punctuation",
+    },
+    {
+      "content": "",
+      "type": "plain",
+    },
+  ],
+  [
+    {
+      "content": "console",
+      "type": "builtin",
+    },
+    {
+      "content": ".",
+      "type": "punctuation",
+    },
+    {
+      "content": "log",
+      "type": "function",
+    },
+    {
+      "content": "(",
+      "type": "punctuation",
+    },
+    {
+      "content": "x",
+      "type": "plain",
+    },
+    {
+      "content": ")",
+      "type": "punctuation",
+    },
+    {
+      "content": ";",
+      "type": "punctuation",
+    },
+  ],
+]
+`;
