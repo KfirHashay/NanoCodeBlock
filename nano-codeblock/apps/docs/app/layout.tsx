@@ -4,7 +4,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NanoCodeBlock Docs'
+  title: 'NanoCodeBlock Docs',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

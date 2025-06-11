@@ -8,7 +8,7 @@ export default function SvelteDemo() {
   useEffect(() => {
     const component = new SvelteCodeBlock({
       target: ref.current!,
-      props: { code: "console.log('Svelte!')", lang: 'javascript' }
+      props: { code: "console.log('Svelte!')", lang: 'javascript' },
     });
     return () => component.$destroy();
   }, []);

@@ -8,7 +8,7 @@ export default function VueDemo() {
 
   useEffect(() => {
     const app = createApp({
-      render: () => h(CodeBlock, { code: "console.log('Vue!')", lang: 'javascript' })
+      render: () => h(CodeBlock, { code: "console.log('Vue!')", lang: 'javascript' }),
     });
     app.mount(ref.current!);
     return () => app.unmount();

@@ -10,7 +10,9 @@ vi.mock('@nano-codeblock/core', async () => {
 
 describe('CodeBlock', () => {
   it('renders highlighted code', () => {
-    const { container } = render(CodeBlock, { props: { code: 'const x = 1;', lang: 'javascript' } });
+    const { container } = render(CodeBlock, {
+      props: { code: 'const x = 1;', lang: 'javascript' },
+    });
     expect(container).toMatchSnapshot();
   });
 

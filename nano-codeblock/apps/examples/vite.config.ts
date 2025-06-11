@@ -5,5 +5,5 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 import solid from 'vite-plugin-solid';
 
 export default defineConfig({
-  plugins: [react(), vue(), svelte(), solid()]
+  plugins: [react(), vue(), svelte(), solid()],
 });

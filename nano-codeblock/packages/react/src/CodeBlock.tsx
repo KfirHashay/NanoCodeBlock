@@ -15,7 +15,7 @@ export function CodeBlock({ code, lang, theme = Theme.dracula }: CodeBlockProps)
   }, [code]);
 
   return (
-    <pre className={`cb ${theme}`}> 
+    <pre className={`cb ${theme}`}>
       <button type="button" onClick={handleCopy} aria-label="Copy code" className="cb-copy">
         Copy
       </button>
@@ -23,7 +23,9 @@ export function CodeBlock({ code, lang, theme = Theme.dracula }: CodeBlockProps)
         {lines.map((line, i) => (
           <span key={i} className="cb-line">
             {line.map((token, j) => (
-              <span key={j} className={`cb-${token.type}`}>{token.content}</span>
+              <span key={j} className={`cb-${token.type}`}>
+                {token.content}
+              </span>
             ))}
             {i < lines.length - 1 && '\n'}
           </span>

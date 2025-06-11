@@ -23,12 +23,16 @@ export const CodeBlock: Component<CodeBlockProps> = (props) => {
         Copy
       </button>
       <code classList={{ 'cb-fade-in': fadeIn() }}>
-        <For each={lines()}>{(line, i) => (
-          <span class="cb-line">
-            <For each={line}>{(token) => <span class={`cb-${token.type}`}>{token.content}</span>}</For>
-            {i() < lines().length - 1 && '\n'}
-          </span>
-        )}</For>
+        <For each={lines()}>
+          {(line, i) => (
+            <span class="cb-line">
+              <For each={line}>
+                {(token) => <span class={`cb-${token.type}`}>{token.content}</span>}
+              </For>
+              {i() < lines().length - 1 && '\n'}
+            </span>
+          )}
+        </For>
       </code>
     </pre>
   );
