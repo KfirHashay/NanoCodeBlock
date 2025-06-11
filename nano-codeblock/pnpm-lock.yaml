@@ -23,6 +23,9 @@ importers:
       '@eslint/js':
         specifier: ^9.28.0
         version: 9.28.0
+      '@solidjs/testing-library':
+        specifier: ^0.8.10
+        version: 0.8.10(solid-js@1.9.7)
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.0(@testing-library/dom@10.4.0)(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -213,7 +216,11 @@ importers:
         specifier: ^5.0.0
         version: 5.33.19
 
-  packages/testing-library-solid: {}
+  packages/testing-library-solid:
+    dependencies:
+      '@solidjs/testing-library':
+        specifier: ^0.8.10
+        version: 0.8.10(solid-js@1.9.7)
 
   packages/ui:
     dependencies:
@@ -1013,6 +1020,16 @@ packages:
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
+
+  '@solidjs/testing-library@0.8.10':
+    resolution: {integrity: sha512-qdeuIerwyq7oQTIrrKvV0aL9aFeuwTd86VYD3afdq5HYEwoox1OBTJy4y8A3TFZr8oAR0nujYgCzY/8wgHGfeQ==}
+    engines: {node: '>= 14'}
+    peerDependencies:
+      '@solidjs/router': '>=0.9.0'
+      solid-js: '>=1.0.0'
+    peerDependenciesMeta:
+      '@solidjs/router':
+        optional: true
 
   '@storybook/global@5.0.0':
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
@@ -4469,6 +4486,11 @@ snapshots:
     optional: true
 
   '@rtsao/scc@1.1.0': {}
+
+  '@solidjs/testing-library@0.8.10(solid-js@1.9.7)':
+    dependencies:
+      '@testing-library/dom': 10.4.0
+      solid-js: 1.9.7
 
   '@storybook/global@5.0.0': {}
 
