@@ -11,7 +11,7 @@ Ship a drop-in code block component that can be consumed by multiple frontend fr
 
 - Themeable syntax highlighting
 - Copy button
-- Works with React, Vue, and Svelte
+- Works with React and Vue
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # Examples
 
-Demonstrates NanoCodeBlock across React, Vue, Svelte, Solid and Web components.
+Demonstrates NanoCodeBlock across React and Vue components.
 
 ## Installation
 
