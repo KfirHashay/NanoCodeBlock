@@ -6,7 +6,7 @@ The monorepo is contained in `nano-codeblock/` and uses a standard `apps` and `p
 
 ## Goal
 
-Provide a reusable code block component that works across React, Vue, and Svelte projects.
+Provide a reusable code block component that works across React and Vue projects.
 
 ## Features
 
