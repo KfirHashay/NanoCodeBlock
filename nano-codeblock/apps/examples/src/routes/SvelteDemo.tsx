@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import SvelteCodeBlock from '@nano-codeblock/svelte';
+import { CodeBlock as SvelteCodeBlock } from '@nano-codeblock/svelte';
 import { motion } from 'framer-motion';
 
 export default function SvelteDemo() {
