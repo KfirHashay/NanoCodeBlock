@@ -11,6 +11,8 @@ vi.mock('@nano-codeblock/core', async () => {
 describe('CodeBlock', () => {
   it('renders highlighted code', () => {
     const { container } = render(<CodeBlock code="const x = 1;" lang="javascript" />);
+    const code = container.querySelector('code');
+    expect(code).toHaveClass('cb-fade-in');
     expect(container).toMatchSnapshot();
   });
 

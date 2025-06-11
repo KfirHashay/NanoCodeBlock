@@ -13,6 +13,8 @@ describe('CodeBlock', () => {
     const { container } = render(CodeBlock, {
       props: { code: 'const x = 1;', lang: 'javascript' },
     });
+    const code = container.querySelector('code');
+    expect(code).toHaveClass('cb-fade-in');
     expect(container).toMatchSnapshot();
   });
 

@@ -17,6 +17,8 @@ describe('CodeBlock', () => {
     el.lang = 'javascript';
     document.body.appendChild(el);
     await el.updateComplete;
+    const code = el.shadowRoot!.querySelector('code');
+    expect(code).toHaveClass('cb-fade-in');
     expect(el.shadowRoot?.innerHTML).toMatchSnapshot();
   });
 
