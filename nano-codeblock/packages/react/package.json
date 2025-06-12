@@ -6,14 +6,17 @@
     "test": "vitest"
   },
   "peerDependencies": {
+    "@nano-codeblock/core": "workspace:*",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@nano-codeblock/core": "workspace:*"
+    "react-dom": "^18.0.0"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react": "^19.1.8"
+  }
 }

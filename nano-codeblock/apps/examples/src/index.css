@@ -1,5 +1,5 @@
+@import '@nano-codeblock/ui/src/global.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import '@nano-codeblock/ui/src/global.css';

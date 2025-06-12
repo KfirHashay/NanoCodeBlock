@@ -2,7 +2,7 @@
   "name": "@nano-codeblock/vue",
   "version": "0.0.0",
   "scripts": {
-    "build": "vite build -c ../../vite.vue.ts",
+    "build": "vite build",
     "test": "vitest"
   },
   "peerDependencies": {
